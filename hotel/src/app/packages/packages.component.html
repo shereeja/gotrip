@@ -1,0 +1,102 @@
+<div class="container-fluid packages-section" *ngIf="showPackage==0">
+    <div class="selection-button-section">
+        <div class="btn-container container">
+        <button type="button" class="btn btn-light btn-filter" (click)="displayallPackage()">
+            ALL
+        </button>
+        <button type="button" class="btn btn-light btn-filter" (click)="filterPackage('party')" >
+            EVENT/PARTY
+        </button>
+        <button type="button" class="btn btn-light btn-filter" (click)="filterPackage('beach')">
+            BEACHES
+        </button>
+        <button type="button" class="btn btn-light btn-filter" (click)="filterPackage('hill')">
+            HILL STATIONS
+        </button>
+    </div>
+    </div>
+    <div class="selection-card-section" >
+        <div class="card-container row " style="margin-left:30px;"  >
+          <div class="col-md-4 col-lg-4 col-lg-4" *ngFor="let n of item1">
+            <div  *ngIf="placefil==n.placefor || placefil=='' "  >
+            <div class="card" style="width: 20rem;"  >
+                <img class="card-img-top" src="{{n.img1}}" alt="Card image cap" width="180px" height="250px">
+                <div class="card-body">
+                  <h5 class="card-title">{{n.company1}}</h5>
+                  <h6 class="card-title">{{n.place}}</h6>
+                  <p class="card-text">{{n.amount1}}/-</p>
+                  <a href="#" class="btn btn-primary" (click)="displayPackageSection(n)">More Details</a>
+                  <a href="#" class="btn btn-primary float-right" (click)="displayBookSection(n)">Book Now</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+        
+        <!--
+        <div class="card-container row">
+            <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div></div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div></div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div></div>
+        </div>
+        <div class="card-container row">
+            <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div></div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div></div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div></div>
+        </div>-->
+    </div>
+</div>
+<div class="child-section1" *ngIf="showPackage==1">
+<app-packagedetail [childItem]="itemn" (goToPackage)="goBackClicked($event)"></app-packagedetail>
+</div>
+<div class="child-section2" *ngIf="showPackage==2">
+<app-bookingdetail [itemb]="itemn" (goToPackage1)="goBackClicked($event)"></app-bookingdetail>
+</div>

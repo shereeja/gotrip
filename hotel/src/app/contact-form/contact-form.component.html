@@ -1,0 +1,66 @@
+<section>
+<div class="container">
+  <div class="contactinfo">
+    <div>
+    <h2>Contact Info</h2>
+    <ul class="info">
+      <li>
+        <span><i class="bi bi-geo-alt-fill"></i></span>
+        <span>2912 Meadowbrook Road <br>
+          Los Angeles, CA<br>
+          90017
+        </span>
+      </li>
+      <li>
+        <span><i class="bi bi-envelope-at"></i></span>
+        <span>GoTrip@gmail.com</span>
+      </li>
+      <li>
+        <span><i class="bi bi-telephone-plus"></i></span>
+        <span>310-385-1623</span>
+      </li>
+    </ul>
+    </div>
+    <ul class="sci">
+      <li><i class="bi bi-facebook"></i></li>
+      <li><i class="bi bi-twitter"></i></li>
+      <li><i class="bi bi-instagram"></i></li>
+      <li><i class="bi bi-youtube"></i></li>
+      <li><i class="bi bi-linkedin"></i></li>
+    </ul>
+ </div>
+ <form  name = 'myForm' action="" onsubmit="return validateForm()" method="get">
+ <div class="contactForm">
+  <h2>Send a message</h2>
+  <div class="formBox">
+    <div class="inputBox w50">
+      <input type="text" id="username" required>
+      <span>First Name</span>
+      <div class="error"></div>
+    </div>
+    <div class="inputBox w50">
+      <input type="text" id="username" required>
+      <span>Last Name</span>
+      <div class="error"></div>
+    </div>
+    <div class="inputBox w50">
+      <input type="email" name="email" onblur="checkEmail(this.value)" required>
+      <span>Email Address</span>
+      <div class="error"></div>
+    </div>
+    <div class="inputBox w50">
+      <input type="number" name="mobile" onkeypress="validatemob()" required>
+      <span>Mobile Number</span>
+    </div>
+    <div class="inputBox w100">
+      <textarea required></textarea>
+      <span>Write your message here</span>
+    </div>
+    <div class="inputBox">
+      <input type="submit" value="Send" required>
+          </div>
+        </div>
+      </div>
+      </form>
+    </div>
+</section>

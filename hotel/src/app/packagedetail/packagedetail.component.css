@@ -1,0 +1,17 @@
+.card-container1
+{
+    margin-left: 350px;
+    margin-top: 10px;
+   
+
+
+    background-color: aquamarine;
+    height: 600px;
+   width:510px;
+}
+.card{
+    background-color: aquamarine;
+    border: none;
+    padding: 10px;
+}
+    

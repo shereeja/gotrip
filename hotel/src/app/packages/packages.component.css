@@ -1,0 +1,32 @@
+.packages-section
+{
+    height: 300px;
+    
+
+}
+.selection-button-section
+{
+    height: 80px;
+    background-color:#1f2daf ;
+   
+}
+
+.btn-container
+{
+   
+    margin-left:450px;
+    padding: 30px;
+}
+.btn-filter
+{
+    margin-left: 5px;
+}
+.selection-card-section
+{
+    margin-left: 25px;
+}
+.card-container
+{
+    margin-top: 10px;
+    
+}

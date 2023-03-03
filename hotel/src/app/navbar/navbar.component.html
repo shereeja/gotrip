@@ -1,0 +1,31 @@
+<nav class="navbar navbar-light navbar-expand-xl ">
+    <a class="navbar-brand">GoTriP.com</a>
+  
+  <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn"  aria-label="Toggle navigation" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+ </button>
+ <div class="collapse navbar-collapse" id="btn">
+    <form class="form-inline navbar-nav ms-auto ul-bg">
+  
+      <button class="btn btn-outline-success" type="submit">Register</button>
+      
+      <button class="btn btn-outline-success" type="submit">Sign in</button>
+    </form>
+    </div>
+  </nav>
+
+  <div class="row header">
+    <div class ="col-md-12 col-xl-12">
+    <form class="form-inline">
+  
+      <button class="btn buttons btn-outline-success" type="submit">Stay</button>
+      
+      <a routerLink="/packages" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn buttons btn-outline-success btns" style="border-radius: 30px;" >Packages</a>
+
+      <a routerlink="/contact-form" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn buttons btn-outline-success style=border-radius: 30px;">Contact Us</a>
+    </form>
+    <p style="font-weight: bold;font-size: 35px;color:white;margin-left:30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Find your next stay</p>
+    <p style="font-size: 20px;color:white;margin-left:30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Search deals on hotels, homes, and much more....</p>
+  </div>
+  </div>
+  <router-outlet></router-outlet>
